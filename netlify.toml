@@ -1,0 +1,17 @@
+[
+build
+]
+  command = "bash build.sh"
+  publish = "dist"
+
+[
+functions
+]
+  directory = "netlify/functions"
+
+[[
+redirects
+]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
